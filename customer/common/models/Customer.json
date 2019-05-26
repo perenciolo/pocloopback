@@ -1,0 +1,28 @@
+{
+  "name": "Customer",
+  "description": "A Customer model representing our customers.",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "firstName": {
+      "type": "String",
+      "required": "true"
+    },
+    "lastName": {
+      "type": "String",
+      "required": "true"
+    },
+    "phone": {
+      "type": "number",
+      "required": "true"
+    },
+    "dob": {
+      "type": "date",
+      "required": "true"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

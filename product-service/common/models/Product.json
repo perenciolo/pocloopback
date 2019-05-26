@@ -1,0 +1,24 @@
+{
+  "name": "Products",
+  "description": "Maintains a list of products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "productName": {
+      "type": "String",
+      "required": "true"
+    },
+    "productDesc": {
+      "type": "String",
+      "required": "true"
+    },
+    "customerId": {
+      "type": "String",
+      "required": "true"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
