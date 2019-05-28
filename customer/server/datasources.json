@@ -1,11 +1,11 @@
 {
-  "mongodb": {
+  "db": {
     "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "masterdb",
+    "port": 27019,
+    "url": "mongodb://localhost:27019",
+    "database": "masternode",
     "password": "",
-    "name": "mongodb",
+    "name": "db",
     "user": "",
     "connector": "mongodb"
   }

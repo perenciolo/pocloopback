@@ -14,7 +14,7 @@
     ]
   },
   "Customer": {
-    "dataSource": "mongodb",
+    "dataSource": "db",
     "public": "true"
   }
 }
