@@ -1,0 +1,25 @@
+version: '2'
+services:
+  api:
+    container_name: docker-node-mongo
+    build: api-gateway/
+    ports:
+      - "8080:8080"
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27019:27017"
+    command: mongod
+  customer:
+    build: customer/
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  product:
+    build: product-service/
+    ports:
+      - "4000:4000"
+    links:
+      - mongo
